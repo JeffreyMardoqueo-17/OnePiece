@@ -26,7 +26,6 @@ C:\Users\Eduardo\Music\OnePieceWorld\OnePieceWorld\obj\Debug\net8.0\staticwebass
 C:\Users\Eduardo\Music\OnePieceWorld\OnePieceWorld\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.OnePieceWorld.props
 C:\Users\Eduardo\Music\OnePieceWorld\OnePieceWorld\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.OnePieceWorld.props
 C:\Users\Eduardo\Music\OnePieceWorld\OnePieceWorld\obj\Debug\net8.0\staticwebassets.pack.json
-C:\Users\Eduardo\Music\OnePieceWorld\OnePieceWorld\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Users\Eduardo\Music\OnePieceWorld\OnePieceWorld\obj\Debug\net8.0\OnePieceWorld.dll
 C:\Users\Eduardo\Music\OnePieceWorld\OnePieceWorld\obj\Debug\net8.0\refint\OnePieceWorld.dll
 C:\Users\Eduardo\Music\OnePieceWorld\OnePieceWorld\obj\Debug\net8.0\OnePieceWorld.pdb
