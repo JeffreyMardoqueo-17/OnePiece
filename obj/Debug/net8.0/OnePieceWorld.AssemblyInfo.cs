@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("OnePieceWorld")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b8b250490e1e04689943670b4da675d19ac818fe")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f8f8b88ed0d9cf31e40390bd44bf21738a807804")]
 [assembly: System.Reflection.AssemblyProductAttribute("OnePieceWorld")]
 [assembly: System.Reflection.AssemblyTitleAttribute("OnePieceWorld")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
