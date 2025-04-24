@@ -1,0 +1,83 @@
+﻿@model OnePieceWorld.Helpers.PaginatedList<OnePieceWorld.Models.Technique>
+
+@{
+    ViewData["Title"] = "Técnicas de Luffy";
+}
+
+<div class="container mt-5">
+    <h2 class="text-center mb-4">@ViewData["Title"]</h2>
+
+    <div class="d-flex justify-content-end mb-3">
+        <a asp-action="Create" class="btn btn-primary">Crear nueva técnica</a>
+    </div>
+
+    <div class="table-responsive">
+        <table class="table table-bordered table-hover align-middle text-center">
+            <thead class="table-dark">
+                <tr>
+                    <th>@Html.DisplayNameFor(model => model.First().Id)</th>
+                    <th>@Html.DisplayNameFor(model => model.First().Name)</th>
+                    <th>@Html.DisplayNameFor(model => model.First().Translation)</th>
+                    <th>@Html.DisplayNameFor(model => model.First().Type)</th>
+                    <th>@Html.DisplayNameFor(model => model.First().Description)</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (Model != null && Model.Any())
+                {
+                    foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@item.Id</td>
+                            <td>@item.Name</td>
+                            <td>@item.Translation</td>
+                            <td>@item.Type</td>
+                            <td class="text-start">@item.Description</td>
+                        </tr>
+                    }
+                }
+                else
+                {
+                    <tr>
+                        <td colspan="6" class="text-center text-muted">No hay técnicas registradas aún.</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Paginación -->
+    <div class="d-flex justify-content-between">
+        <div>
+            <span>Mostrando @Model.Count elementos de un total de @Model.TotalPages páginas</span>
+        </div>
+
+        <div>
+            <ul class="pagination">
+                <!-- Página anterior -->
+                @if (Model.HasPreviousPage)
+                {
+                    <li class="page-item">
+                        <a class="page-link" href="@Url.Action("Index", new { page = Model.PageIndex - 1 })">Anterior</a>
+                    </li>
+                }
+
+                <!-- Páginas -->
+                @for (var i = 1; i <= Model.TotalPages; i++)
+                {
+                    <li class="page-item @(i == Model.PageIndex ? "active" : "")">
+                        <a class="page-link" href="@Url.Action("Index", new { page = i })">@i</a>
+                    </li>
+                }
+
+                <!-- Página siguiente -->
+                @if (Model.HasNextPage)
+                {
+                    <li class="page-item">
+                        <a class="page-link" href="@Url.Action("Index", new { page = Model.PageIndex + 1 })">Siguiente</a>
+                    </li>
+                }
+            </ul>
+        </div>
+    </div>
+</div>
